@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import JsonResponse
+from django.views.generic import DetailView
 
 import json
 import datetime
@@ -7,6 +8,9 @@ import datetime
 from .models import *
 from .utils import cookieCart, cartData, guestOrder
 
+class ProductDetailView(DetailView):
+	template_name = 'shop/shop_detail.html'
+	model = Product
 
 def shop(request):
 	data = cartData(request)

@@ -40,12 +40,15 @@ INSTALLED_APPS = [
 
     # My apps
     'snippets.apps.SnippetsConfig',
+    'products.apps.ProductsConfig',
     'shop.apps.ShopConfig',
     
     # Third Party
     'rest_framework',
     'django_extensions',
-
+    'storages',
+    # 'easy_thumbnails',
+    
 ]
 
 MIDDLEWARE = [
@@ -141,3 +144,15 @@ REST_FRAMEWORK = {
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
     'PAGE_SIZE': 5
 }
+
+
+THUMBNAIL_ALIASES = {
+    '': {
+        'main': {'size': (330, 250), 'crop': True},
+    },
+}
+
+
+AWS_ACCESS_KEY_ID=os.environ.get('AWS_ACCESS_KEY_ID')
+AWS_SECRET_ACCESS_KEY=os.environ.get('AWS_SECRET_ACCESS_KEY')
+AWS_STORAGE_BUCKET_NAME='nyn-dev-local'

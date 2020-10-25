@@ -10,24 +10,23 @@ class Customer(models.Model):
         return self.name
 
 class Product(models.Model):
-    origin = models.URLField(null=True,blank=True) # Seller's Website e.g. "https://knifekits.com/vcom/"
-    name = models.CharField(max_length=200)
-    sku = models.CharField(max_length=50)
-    description = models.TextField()
-    price = models.DecimalField(max_digits=8, decimal_places=2)
-    image = models.ImageField(null=True, blank=True)
-
-    
-    def __str__(self):
-        return self.sku
-
-    @property
-    def imageURL(self):
-        try:
-            url = self.image.url
-        except:
-            url = ''
-        return url
+	name = models.CharField(max_length=200)
+	digital = models.BooleanField(default=False)
+	sku = models.CharField(max_length=50)
+	description = models.TextField()
+	price = models.DecimalField(max_digits=8, decimal_places=2)
+	image = models.ImageField(null=True, blank=True)
+	
+	def __str__(self):
+		return self.sku
+	
+	@property
+	def imageURL(self):
+		try:
+			url = self.image.url
+		except:
+			url = ''
+		return url
 
 class Order(models.Model):
 	customer = models.ForeignKey(Customer, on_delete=models.SET_NULL, null=True, blank=True)
