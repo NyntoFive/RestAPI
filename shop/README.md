@@ -2,6 +2,7 @@
 
 ### Basic e-commerce shop
 
--  [ ] Add items to a cart 
--  [ ] Checkout page that updates with the cart
--  [ ] Orders / buy stuff in the cart
+-  [x] Add items to a cart 
+-  [x] Checkout page that updates with the cart
+-  [x] Orders / buy stuff in the cart
+-  [ ] Login / Auth

@@ -37,6 +37,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sites',
+
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
+    # Providers go here...
+    'allauth.socialaccount.providers.github',
 
     # My apps
     'snippets.apps.SnippetsConfig',
@@ -47,8 +54,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'django_extensions',
     'storages',
-    # 'easy_thumbnails',
-    
+    'sorl.thumbnail',
 ]
 
 MIDDLEWARE = [
@@ -74,6 +80,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'django.template.context_processors.request',
             ],
         },
     },
@@ -145,14 +152,17 @@ REST_FRAMEWORK = {
     'PAGE_SIZE': 5
 }
 
-
-THUMBNAIL_ALIASES = {
-    '': {
-        'main': {'size': (330, 250), 'crop': True},
-    },
+# DJANGO ALL-AUTH
+AUTHENTICATION_BACKENDS = {
+    'django.contrib.auth.backends.ModelBackend',
+    'allauth.account.auth_backends.AuthenticationBackend',
 }
 
+SITE_ID = 1
 
-AWS_ACCESS_KEY_ID=os.environ.get('AWS_ACCESS_KEY_ID')
-AWS_SECRET_ACCESS_KEY=os.environ.get('AWS_SECRET_ACCESS_KEY')
-AWS_STORAGE_BUCKET_NAME='nyn-dev-local'
+ACCOUNT_EMAIL_VERIFICATION = 'none'
+LOGIN_REDIRECT_URL = 'shop'
+
+# AWS_ACCESS_KEY_ID=os.environ.get('AWS_ACCESS_KEY_ID')
+# AWS_SECRET_ACCESS_KEY=os.environ.get('AWS_SECRET_ACCESS_KEY')
+# AWS_STORAGE_BUCKET_NAME='nyn-dev-local'
