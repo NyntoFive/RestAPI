@@ -1,0 +1,42 @@
+{% extends 'my_base.html' %}
+
+{% block title %}Task Management{% endblock %}
+{% block css %}
+<style>
+body,
+main {
+  height:100%;
+}
+.mask {
+  padding-top: 58px;
+}
+@media (min-width: 992px) {
+  .mask {
+    padding-top: 121.27px;
+  }
+}
+
+.card {
+  min-width: 272px;
+  max-width: 272px;
+  height: auto;
+  background-color: #ebecf0;
+}
+.sortable-item {
+  cursor: grab;
+  transition: background-color 0.2 ease-in !important;
+}
+sortable-item:hover {
+  background-color: rgba(0,0,0,0.01);
+}
+</style>
+{% endblock css %}
+
+{% block header %}
+  {% include 'components/task_header.html' %}
+{% endblock header %}
+  
+{% block content %}
+  {% include 'components/task_board.html' %}
+{% endblock content %}
+  </main>

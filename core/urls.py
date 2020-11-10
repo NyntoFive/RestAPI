@@ -24,7 +24,8 @@ urlpatterns = [
     path('accounts/', include('allauth.urls')),
     path('snips/', include('snippets.urls')),
     path('products/', include('products.urls')),
-    path('', include('shop.urls')),
+    path('shop/', include('shop.urls')),
+    path('', include('portfolio.urls')), # Landing Page
     
 ]
 

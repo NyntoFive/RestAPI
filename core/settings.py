@@ -25,7 +25,7 @@ SECRET_KEY = '6qcbaunjfh)p03o*_po)$m1+=6u@ou#l2%=f53pm%5+yj1$d_x'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -44,12 +44,10 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
     # Providers go here...
     'allauth.socialaccount.providers.github',
-
     # My apps
     'snippets.apps.SnippetsConfig',
     'products.apps.ProductsConfig',
     'shop.apps.ShopConfig',
-    
     # Third Party
     'rest_framework',
     'django_extensions',
