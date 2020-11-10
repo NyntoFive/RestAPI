@@ -14,9 +14,5 @@ def sample_a(request):
     return render(request, template_name, context={})
 
 def sample_b(request, **kwargs):
-    template_name = "tmp.html"
-    return render(request, template_name)
-    
-def task_manager(request, **kwargs):
-    template_name = "task_manager.html"
+    template_name = "portfolio/tmp.html"
     return render(request, template_name)
