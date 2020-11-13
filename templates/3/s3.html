@@ -1,0 +1,562 @@
+{% extends 'my_base.html' %}
+{% load static %}
+{% block title %}3{% endblock %}
+{% block css%}
+    <link rel="stylesheet" href="{% static 'css/s3.css' %}">
+    {% endblock %}
+    
+{% block header %}
+      <!-- Navigation -->
+  <header>
+
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
+      <div class="container">
+
+        <!-- Brand -->
+        <a class="navbar-brand waves-effect" href="https://mdbootstrap.com/docs/jquery/" target="_blank">
+          <img src="https://mdbootstrap.com/wp-content/uploads/2018/06/logo-mdb-jquery-small.png" alt="Logo">
+        </a>
+
+        <!-- Collapse -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Links -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+          <!-- Left -->
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link waves-effect" href="https://mdbootstrap.com/docs/jquery/" target="_blank">jQuery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link waves-effect" href="https://mdbootstrap.com/docs/angular/" target="_blank">Angular</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link waves-effect" href="https://mdbootstrap.com/docs/react/" target="_blank">React</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link waves-effect" href="https://mdbootstrap.com/docs/vue/" target="_blank">Vue</a>
+            </li>
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">More</a>
+              <div class="dropdown-menu dropdown-info" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">About us</a>
+                <a class="dropdown-item" href="#">Our team</a>
+                <a class="dropdown-item" href="#">Contact</a>
+              </div>
+            </li>
+          </ul>
+
+          <!-- Right -->
+          <ul class="navbar-nav nav-flex-icons">
+            <li class="nav-item">
+              <a href="https://www.facebook.com/mdbootstrap" class="nav-link waves-effect" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="https://twitter.com/MDBootstrap" class="nav-link waves-effect" target="_blank">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="https://github.com/mdbootstrap/bootstrap-material-design" class="nav-link waves-effect"
+                target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="https://mdbootstrap.com/docs/jquery/newsletter/"
+                class="nav-link border border-light rounded waves-effect mr-2" target="_blank">
+                <i class="fas fa-envelope mr-1"></i>Newsletter
+              </a>
+            </li>
+          </ul>
+
+        </div>
+
+      </div>
+    </nav>
+    <!-- Navbar -->
+
+    <!-- Intro -->
+    <div class="card card-intro info-color-dark  mb-4">
+
+      <div class="card-body white-text text-center rgba-stylish-light">
+
+        <!--Grid row-->
+        <div class="row d-flex justify-content-center">
+
+          <!--Grid column-->
+          <div class="col-md-6">
+
+            <p class="h5 mb-2">
+              This is very long post title
+            </p>
+
+            <p class="mb-0">And this is a subheading - you can remove it if you don't need it.</p>
+
+          </div>
+          <!--Grid column-->
+
+        </div>
+        <!--Grid row-->
+
+      </div>
+
+    </div>
+    <!-- Intro -->
+
+  </header>
+  <!-- Navigation -->
+{% endblock %}
+
+{% block content %}
+  <!--Main layout-->
+  <main>
+    <div class="container">
+
+      <!--Section: Article-->
+      <section>
+
+        <!--Grid row-->
+        <div class="row">
+
+          <!-- Grid column -->
+          <div class="col-lg-8 col-md-12">
+
+            <!--Section: Article top UI-->
+            <section>
+
+              <!-- Featured image -->
+              <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(5).jpg" class="img-fluid z-depth-1 rounded"
+                alt="">
+
+              <!-- Post data -->
+              <div class="post-data d-flex justify-content-between my-4">
+                <!-- Author -->
+                <a href="" class="black-text">
+                  <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(9).jpg"
+                    class="avatar-small rounded z-depth-1" class="md-avatar rounded-circle">
+                  <strong class="ml-1">John Doe</strong>
+                </a>
+                <!-- Author -->
+
+                <!-- Interactions -->
+                <div class="social-buttons smooth-scroll">
+                  <!--Facebook-->
+                  <button type="button" class="btn btn-sm btn-fb my-0">
+                    <i class="fab fa-facebook-f"></i>
+                  </button>
+
+                  <!--Twitter-->
+                  <button type="button" class="btn btn-sm btn-tw my-0">
+                    <i class="fab fa-twitter"></i>
+                  </button>
+
+                  <!--Twitter-->
+                  <button type="button" class="btn btn-sm btn-li my-0">
+                    <i class="fab fa-linkedin-in"></i>
+                  </button>
+
+                  <!-- Comments -->
+                  <a role="button" class="btn btn-sm btn-unique my-0" href="#section-comments">
+                    <i class="far fa-comments mr-1"></i> Comments <span>(4)</span>
+                  </a>
+                </div>
+                <!-- Interactions -->
+
+              </div>
+              <!-- Post data -->
+
+            </section>
+            <!--Section: Article top UI-->
+
+            <hr>
+
+            <!--Section: Text-->
+            <section class="text-justify">
+
+              <p class="font-weight-bold">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, maxime
+                rerum. Expedita dolor quae in odio ad veritatis doloremque harum non nulla rerum eveniet exercitationem
+                alias, repudiandae amet minus maiores.</p>
+
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt omnis eius culpa ab exercitationem,
+                odit sapiente quasi assumenda optio minus? Velit facilis eligendi corrupti cumque saepe, ea
+                exercitationem voluptatem minima! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam officia
+                aliquam fuga laboriosam ea sunt, vitae perspiciatis. Nihil deleniti minus numquam labore ratione rerum,
+                iste quidem consectetur natus error provident.</p>
+
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt omnis eius culpa ab exercitationem,
+                odit sapiente quasi assumenda optio minus? Velit facilis eligendi corrupti cumque saepe, ea
+                exercitationem voluptatem minima! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam officia
+                aliquam fuga laboriosam ea sunt, vitae perspiciatis. Nihil deleniti minus numquam labore ratione rerum,
+                iste quidem consectetur natus error provident.</p>
+
+              <figure class="figure">
+                <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg"
+                  class="figure-img img-fluid z-depth-1" alt="...">
+                <figcaption class="figure-caption">A caption for the above image.</figcaption>
+              </figure>
+
+
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur sapiente rem consequatur architecto
+                aut, labore similique cum. Dolores eum architecto soluta minus optio, magni eaque veritatis vitae enim
+                rerum nemo.</p>
+
+              <hr>
+
+              <p class="my-4 font-weight-bold">This is a subheading</p>
+
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt omnis eius culpa ab exercitationem,
+                odit sapiente quasi assumenda optio minus? Velit facilis eligendi corrupti cumque saepe, ea
+                exercitationem voluptatem minima! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam officia
+                aliquam fuga laboriosam ea sunt, vitae perspiciatis. Nihil deleniti minus numquam labore ratione rerum,
+                iste quidem consectetur natus error provident.</p>
+
+              <ul>
+                <li>Lorem ipsum</li>
+                <li>Lorem ipsum</li>
+                <li>Lorem ipsum</li>
+              </ul>
+
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur sapiente rem consequatur architecto
+                aut, labore similique cum. Dolores eum architecto soluta minus optio, magni eaque veritatis vitae enim
+                rerum nemo.</p>
+
+            </section>
+            <!--Section: Text-->
+
+            <!-- Section: Share buttons -->
+            <section class="text-center mb-4 smooth-scroll social-buttons">
+
+              <hr>
+
+              <p class="font-weight-bold">Spreed the word: </p>
+
+              <!--Facebook-->
+              <button type="button" class="btn btn-sm btn-fb my-0">
+                <i class="fab fa-facebook-f"></i>
+              </button>
+
+              <!--Twitter-->
+              <button type="button" class="btn btn-sm btn-tw my-0">
+                <i class="fab fa-twitter"></i>
+              </button>
+
+              <!--Twitter-->
+              <button type="button" class="btn btn-sm btn-li my-0">
+                <i class="fab fa-linkedin-in"></i>
+              </button>
+
+              <!-- Comments -->
+              <a role="button" class="btn btn-sm btn-unique my-0 mt-xs-4" href="#section-comments">
+                <i class="far fa-comments mr-1"></i> Add comment <span>(4)</span>
+              </a>
+
+              <hr>
+
+            </section>
+            <!-- Section: Share buttons -->
+
+            <!--Section: Author Box-->
+            <section class="mb-4">
+
+              <div class="text-center font-weight-bold">About the author</div>
+
+              <div class="media mt-4 px-1">
+                <img class="card-img-100 rounded d-flex z-depth-1 mr-3"
+                  src="https://mdbootstrap.com/img/Photos/Avatars/img%20(9).jpg" alt="Generic placeholder image">
+                <div class="media-body">
+
+                  <div class="d-block">
+                    <p class="font-weight-bold my-0">
+                      <a href="" class="black-text">John Doe</a>
+                    </p>
+                    <div class="my-2">
+                      <a class="mr-1" role="button"><i class="fab  fa-facebook-f"></i></a>
+                      <a class="mr-1" role="button"><i class="fab fa-twitter"></i></a>
+                      <a class="mr-1" role="button"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                  </div>
+
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod consectetur accusamus velit nostrum
+                    et
+                    magnam.</p>
+                </div>
+              </div>
+
+            </section>
+            <!--Section: Author Box-->
+
+            <hr class="mb-4">
+
+            <!--Section: Comments-->
+            <section id="section-comments" class="mb-4">
+
+              <div class="text-center font-weight-bold"><span>4</span> comments</div>
+
+              <div class="media d-block d-md-flex mt-4">
+                <img class="card-img-64 rounded z-depth-1 d-flex mx-auto mb-3"
+                  src="https://mdbootstrap.com/img/Photos/Avatars/img (20).jpg" alt="Generic placeholder image">
+                <div class="media-body text-center text-md-left ml-md-3 ml-0">
+                  <p class="font-weight-bold my-0">
+                    Miley Steward
+                    <a href="" class="pull-right ml-1">
+                      <i class="fas fa-reply"></i>
+                    </a>
+                  </p>
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                  Excepteur sint occaecat
+                  cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  <div class="media d-block d-md-flex mt-4">
+                    <img class="card-img-64 rounded z-depth-1 d-flex mx-auto mb-3"
+                      src="https://mdbootstrap.com/img/Photos/Avatars/img (27).jpg" alt="Generic placeholder image">
+                    <div class="media-body text-center text-md-left ml-md-3 ml-0">
+                      <p class="font-weight-bold my-0">
+                        Tommy Smith
+                        <a href="" class="pull-right ml-1">
+                          <i class="fas fa-reply"></i>
+                        </a>
+                      </p>
+                      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                      totam rem aperiam, eaque
+                      ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                    </div>
+                  </div>
+
+                  <!-- Quick Reply -->
+                  <div class="form-group mt-4">
+                    <label for="quickReplyFormComment">Your comment</label>
+                    <textarea class="form-control" id="quickReplyFormComment" rows="5"></textarea>
+
+                    <div class="text-center my-4">
+                      <button class="btn btn-info btn-sm" type="submit">Post</button>
+                    </div>
+                  </div>
+
+                  <div class="media d-block d-md-flex mt-3">
+                    <img class="card-img-64 rounded z-depth-1 d-flex mx-auto mb-3"
+                      src="https://mdbootstrap.com/img/Photos/Avatars/img (21).jpg" alt="Generic placeholder image">
+                    <div class="media-body text-center text-md-left ml-md-3 ml-0">
+                      <p class="font-weight-bold my-0">
+                        Sylvester the Cat
+                        <a href="" class="pull-right ml-1">
+                          <i class="fas fa-reply"></i>
+                        </a>
+                      </p>
+                      Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed
+                      quia non numquam eius modi
+                      tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="media d-block d-md-flex mt-3">
+                <img class="card-img-64 rounded z-depth-1 d-flex mx-auto mb-3"
+                  src="https://mdbootstrap.com/img/Photos/Avatars/img (30).jpg" alt="Generic placeholder image">
+                <div class="media-body text-center text-md-left ml-md-3 ml-0">
+                  <p class="font-weight-bold my-0">
+                    Caroline Horwitz
+                    <a href="" class="pull-right ml-1">
+                      <i class="fas fa-reply"></i>
+                    </a>
+                  </p>
+                  At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+                  deleniti
+                  atque corrupti
+                  quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in
+                  culpa
+                  officia deserunt mollitia animi, id est laborum et dolorum fuga.
+                </div>
+              </div>
+
+            </section>
+            <!--Section: Comments-->
+
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-lg-4 col-md-12">
+
+            <!-- Sticky content -->
+            <div class="sticky mt-4 mt-md-0 pb-4">
+
+              <!-- Form subscription -->
+              <form class="text-center border border-light p-4 mb-4" action="#!">
+
+                <p class="font-weight-bold">Subscribe</p>
+
+                <p>Join our mailing list. We write rarely, but only the best content.</p>
+
+                <p>
+                  <a href="" target="_blank">See the last newsletter</a>
+                </p>
+
+                <!-- Name -->
+                <div class="md-form md-outline">
+                  <input type="text" id="form1" class="form-control">
+                  <label for="form1">Your name</label>
+                </div>
+
+                <!-- Email -->
+
+                <div class="md-form md-outline">
+                  <input type="email" id="form2" class="form-control">
+                  <label for="form2">Your e-mail</label>
+                </div>
+
+                <!-- Sign in button -->
+                <button class="btn btn-info btn-block mb-0" type="submit">Sign in</button>
+
+
+              </form>
+              <!-- Form subscription -->
+
+              <!-- Related articles -->
+
+              <p class="font-weight-bold text-center">Related articles</p>
+
+              <!--News tile -->
+              <div class="news-tile view zoom z-depth-1 rounded mb-4">
+
+                <a href="#!" class="text-white">
+                  <img src="https://mdbootstrap.com/img/Photos/Horizontal/City/6-col/img%20(26).jpg"
+                    class="img-fluid rounded-bottom" alt="sample image">
+                  <div class="mask rgba-stylish-strong">
+                    <div class="text-white text-center py-lg-5 py-0 my-0">
+                      <div>
+                        <h4 class="card-title font-weight-bold pt-2">
+                          <strong>This is news title</strong>
+                        </h4>
+
+                        <p class="mx-5 clearfix d-none d-md-block"></p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+
+              </div>
+              <!--News tile -->
+
+              <!--News tile -->
+              <div class="news-tile view zoom z-depth-1 rounded mb-4">
+
+                <a href="#!" class="text-white">
+                  <img src="https://mdbootstrap.com/img/Photos/Horizontal/City/6-col/img%20(25).jpg"
+                    class="img-fluid rounded-bottom" alt="sample image">
+                  <div class="mask rgba-stylish-strong">
+                    <div class="text-white text-center py-lg-5 py-0 my-0">
+                      <div>
+                        <h4 class="card-title font-weight-bold pt-2">
+                          <strong>This is news title</strong>
+                        </h4>
+
+                        <p class="mx-5 clearfix d-none d-md-block"></p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+
+              </div>
+              <!--News tile -->
+              <!-- Related articles -->
+
+            </div>
+            <!-- Sticky content -->
+
+          </div>
+          <!-- Grid column -->
+
+        </div>
+        <!--Grid row-->
+
+      </section>
+      <!--Section: Article-->
+
+
+
+    </div>
+  </main>
+  <!--Main layout-->
+
+  <!--Footer-->
+  <footer id="stickyStopper" class="page-footer text-center font-small info-color-dark"
+    style="visibility: visible; animation-name: fadeIn;">
+
+    <div class="rgba-stylish-strong">
+
+      <!--Call to action-->
+      <div class="pt-4">
+        <a class="btn btn-outline-white waves-effect waves-light"
+          href="https://mdbootstrap.com/docs/jquery/getting-started/download/" target="_blank" role="button">Download
+          MDB
+          <i class="fas fa-download ml-2"></i>
+        </a>
+        <a class="btn btn-outline-white waves-effect waves-light" href="https://mdbootstrap.com/education/bootstrap/"
+          target="_blank" role="button">Start
+          free tutorial
+          <i class="fas fa-graduation-cap ml-2"></i>
+        </a>
+      </div>
+      <!--/.Call to action-->
+
+      <hr class="my-4">
+
+      <!-- Social icons -->
+      <div class="pb-4">
+        <a href="https://www.facebook.com/mdbootstrap" target="_blank">
+          <i class="fab fa-facebook-f mr-3"></i>
+        </a>
+
+        <a href="https://twitter.com/MDBootstrap" target="_blank">
+          <i class="fab fa-twitter mr-3"></i>
+        </a>
+
+        <a href="https://www.youtube.com/watch?v=7MUISDJ5ZZ4" target="_blank">
+          <i class="fab fa-youtube mr-3"></i>
+        </a>
+
+        <a href="https://plus.google.com/u/0/b/107863090883699620484" target="_blank">
+          <i class="fab fa-google-plus-g mr-3"></i>
+        </a>
+
+        <a href="https://dribbble.com/mdbootstrap" target="_blank">
+          <i class="fab fa-dribbble mr-3"></i>
+        </a>
+
+        <a href="https://pinterest.com/mdbootstrap" target="_blank">
+          <i class="fab fa-pinterest mr-3"></i>
+        </a>
+
+        <a href="https://github.com/mdbootstrap/bootstrap-material-design" target="_blank">
+          <i class="fab fa-github mr-3"></i>
+        </a>
+
+        <a href="http://codepen.io/mdbootstrap/" target="_blank">
+          <i class="fab fa-codepen mr-3"></i>
+        </a>
+      </div>
+      <!-- Social icons -->
+
+      <!--Copyright-->
+      <div class="footer-copyright py-3">
+        © 2019 Copyright:
+        <a href="https://mdbootstrap.com/education/bootstrap/" target="_blank"> MDBootstrap.com </a>
+      </div>
+      <!--/.Copyright-->
+
+    </div>
+
+  </footer>
+{% endblock content %}
+  {% block js %}
+    <script type="text/javascript" src="js/s3.js"></script>
+    {% endblock %}
