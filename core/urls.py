@@ -25,8 +25,8 @@ urlpatterns = [
     path('snips/', include('snippets.urls')),
     path('products/', include('products.urls')),
     path('shop/', include('shop.urls')),
-    path('', include('portfolio.urls')), # Landing Page
-    
+    path('portfolio/', include('portfolio.urls')),
+    path('', include('todo_ninja.urls')),
 ]
 
 urlpatterns += [

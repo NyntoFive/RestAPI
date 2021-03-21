@@ -44,10 +44,14 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
     # Providers go here...
     'allauth.socialaccount.providers.github',
+
     # My apps
     'snippets.apps.SnippetsConfig',
     'products.apps.ProductsConfig',
     'shop.apps.ShopConfig',
+    'portfolio.apps.PortfolioConfig',
+    'todo_ninja.apps.TodoNinjaConfig',
+    
     # Third Party
     'rest_framework',
     'django_extensions',
